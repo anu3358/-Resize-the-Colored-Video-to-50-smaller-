@@ -47,3 +47,27 @@ Set the input_video_path and output_video_path.
 Run the script — your resized video will be saved.
 
 🔧 Example:
+## 🧠 How It Works
+
+- Opens the video file using OpenCV  
+- Calculates 50% of the original frame width and height  
+- Resizes each frame using `cv2.resize()`  
+- Saves the resized video to a new file
+
+---
+
+## 📸 Visual Explanation
+
+| Original Size | Resized (50%) |
+|---------------|---------------|
+| 1920x1080     | 960x540       |
+
+---
+
+## 📄 Code Snippet
+
+```python
+new_width = int(frame_width * 0.5)
+new_height = int(frame_height * 0.5)
+resized_frame = cv2.resize(frame, (new_width, new_height), interpolation=cv2.INTER_AREA)
+
