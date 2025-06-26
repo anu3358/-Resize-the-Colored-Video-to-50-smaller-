@@ -36,3 +36,14 @@ To install OpenCV, run:
 
 ```bash
 pip install opencv-python
+
+
+📂 How to Use
+🖥️ In Google Colab or Locally:
+Upload or provide the path to your video.
+
+Set the input_video_path and output_video_path.
+
+Run the script — your resized video will be saved.
+
+🔧 Example:
